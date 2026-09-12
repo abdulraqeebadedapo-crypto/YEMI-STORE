@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>iPhone | Phone Store</title>
+
+    <link rel="stylesheet" href="PHONE.css">
+</head>
+
+<body>
+
+<header>
+    <div class="navbar">
+
+        <a href="index.html" class="logo">
+             YEMI PHONE<span>STORE</span>
+        </a>
+
+        <button class="menu" onclick="toggleMenu()">☰</button>
+
+        <nav id="nav">
+            <a href="index.html">Home</a>
+            <a href="samsung.html">Samsung</a>
+            <a href="iphone.html">iPhone</a>
+            <a href="android.html">Android</a>
+            <a href="accessories.html">Accessories</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button onclick="toggleDark()">🌙</button>
+            <button onclick="toggleCart()">
+                🛒 <span id="cart-count">0</span>
+            </button>
+        </div>
+
+    </div>
+</header>
+
+
+<!-- CART -->
+
+<div id="cart-panel" class="cart-panel">
+
+    <h2>Shopping Cart</h2>
+
+    <div id="cart-items">
+        <p>Your cart is empty.</p>
+    </div>
+
+    <h3>
+        Total:
+        <span id="cart-total">₦0</span>
+    </h3>
+
+    <a href="contact.html" class="btn primary">
+        Checkout
+    </a>
+
+</div>
+
+
+<!-- PAGE BANNER -->
+
+<section class="page-banner">
+
+    <h1>iPhone Collection 🍎</h1>
+
+    <p>
+        Discover premium Apple smartphones.
+    </p>
+
+</section>
+
+
+<!-- PRODUCTS -->
+
+<section class="container">
+
+    <div class="section-title">
+
+        <h2>Latest iPhones</h2>
+
+        <p>
+            Choose your preferred iPhone.
+        </p>
+
+    </div>
+
+
+    <div class="products">
+
+
+        <!-- IPHONE 17 -->
+
+        <div class="card">
+
+            <span class="badge">
+                Apple
+            </span>
+
+            <img
+    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_17_Pro_2026.jpg"
+    alt="iPhone 17 Pro Max"
+>
+
+            <h3>
+                iPhone 17 Pro Max
+            </h3>
+
+            <p>
+                Pro Camera • 256GB •
+                Premium Design
+            </p>
+
+            <div class="price">
+                ₦2,200,000
+            </div>
+
+            <button
+                class="btn primary"
+                onclick="addToCart(
+                    'iPhone 17 Pro Max',
+                    2200000
+                )"
+            >
+                Add To Cart
+            </button>
+
+        </div>
+
+
+        <!-- IPHONE 16 -->
+
+        <div class="card">
+
+            <span class="badge">
+                Apple
+            </span>
+
+            <img
+    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_16_Pro_(54251926676).jpg"
+    alt="iPhone 16 Pro Max"
+>
+
+            <h3>
+                iPhone 16 Pro Max
+            </h3>
+
+            <p>
+                A18 Pro • Titanium Design •
+                256GB
+            </p>
+
+            <div class="price">
+                ₦1,800,000
+            </div>
+
+            <button
+                class="btn primary"
+                onclick="addToCart(
+                    'iPhone 16 Pro Max',
+                    1800000
+                )"
+            >
+                Add To Cart
+            </button>
+
+        </div>
+
+
+        <!-- IPHONE 16 PRO -->
+
+        <div class="card">
+
+            <span class="badge">
+                Apple
+            </span>
+
+            <img
+    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_16_Pro_(54251926676).jpg"
+    alt="iPhone 16 Pro"
+>
+
+            <h3>
+                iPhone 16 Pro
+            </h3>
+
+            <p>
+                A18 Pro Chip •
+                Pro Camera
+            </p>
+
+            <div class="price">
+                ₦1,550,000
+            </div>
+
+            <button
+                class="btn primary"
+                onclick="addToCart(
+                    'iPhone 16 Pro',
+                    1550000
+                )"
+            >
+                Add To Cart
+            </button>
+
+        </div>
+
+
+        <!-- IPHONE 15 -->
+
+        <div class="card">
+
+            <span class="badge">
+                Apple
+            </span>
+
+            <img
+    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone_15_Pro_Max.jpg"
+    alt="iPhone 15 Pro Max"
+>
+
+            <h3>
+                iPhone 15 Pro Max
+            </h3>
+
+            <p>
+                A17 Pro • Titanium •
+                256GB
+            </p>
+
+            <div class="price">
+                ₦1,350,000
+            </div>
+
+            <button
+                class="btn primary"
+                onclick="addToCart(
+                    'iPhone 15 Pro Max',
+                    1350000
+                )"
+            >
+                Add To Cart
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <h3>YEMI PHONE STORE</h3>
+
+    <p>
+        Quality smartphones.
+        Honest service.
+    </p>
+
+    <p>
+        © 2026 YEMI Phone Store
+    </p>
+
+</footer>
+
+
+<script src="PHONE.js"></script>
+
+</body>
+</html>

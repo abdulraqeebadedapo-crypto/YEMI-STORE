@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Android Phones | Phone Store</title>
+
+    <link rel="stylesheet" href="PHONE.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="navbar">
+
+        <a href="index.html" class="logo">
+             YEMI PHONE<span>STORE</span>
+        </a>
+
+        <button class="menu" onclick="toggleMenu()">☰</button>
+
+        <nav id="nav">
+            <a href="index.html">Home</a>
+            <a href="samsung.html">Samsung</a>
+            <a href="iphone.html">iPhone</a>
+            <a href="android.html">Android</a>
+            <a href="accessories.html">Accessories</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <button onclick="toggleDark()">
+                🌙
+            </button>
+
+            <button onclick="toggleCart()">
+                🛒
+                <span id="cart-count">0</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- CART -->
+
+<div id="cart-panel" class="cart-panel">
+
+    <h2>Shopping Cart</h2>
+
+    <div id="cart-items">
+        <p>Your cart is empty.</p>
+    </div>
+
+    <h3>
+        Total:
+        <span id="cart-total">₦0</span>
+    </h3>
+
+    <a href="contact.html" class="btn primary">
+        Checkout
+    </a>
+
+</div>
+
+
+<section class="page-banner">
+
+    <h1>Android Phones 🤖</h1>
+
+    <p>
+        Powerful Android smartphones from
+        leading brands.
+    </p>
+
+</section>
+
+
+<section class="container">
+
+    <div class="products">
+
+
+        <!-- TECNO PHANTOM -->
+
+        <div class="card">
+
+            <span class="badge">
+                Tecno
+            </span>
+
+            <img
+    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Tecno_Phantom_V_Flip.png"
+    alt="Tecno Phantom"
+>
+
+            <h3>
+                Tecno Phantom
+            </h3>
+
+            <p>
+                Flagship Android •
+                Advanced Camera
+            </p>
+
+            <div class="price">
+                ₦800,000
+            </div>
+
+            <button
+                class="btn primary"
+                onclick="addToCart(
+                    'Tecno Phantom',
+                    800000
+                )"
+            >
+                Add To Cart
+            </button>
+
+        </div>
+
+
+        <!-- TECNO CAMON -->
+
+        <div class="card">
+
+            <span class="badge">
+                Tecno
+            </span>
+
+            <img
+    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Tecno_Camon_50_rear_panel.jpg"
+    alt="Tecno Camon"
+>
+
+            <h3>
+                Tecno Camon
+            </h3>
+
+            <p>
+                Camera Phone •
+                256GB
+            </p>
+
+            <div class="price">
+                ₦450,000
+            </div>
+
+            <button
+                class="btn primary"
+                onclick="addToCart(
+                    'Tecno Camon',
+                    450000
+                )"
+            >
+                Add To Cart
+            </button>
+
+        </div>
+
+
+        <!-- INFINIX -->
+
+        <div class="card">
+
+            <span class="badge">
+                Infinix
+            </span>
+
+            <img
+    src="https://fdn2.gsmarena.com/vv/pics/infinix/infinix-note-edge-1.jpg"
+    alt="Infinix Note"
+>
+
+            <h3>
+                Infinix Note
+            </h3>
+
+            <p>
+                Large Display •
+                256GB • Fast Charging
+            </p>
+
+            <div class="price">
+                ₦390,000
+            </div>
+
+            <button
+                class="btn primary"
+                onclick="addToCart(
+                    'Infinix Note',
+                    390000
+                )"
+            >
+                Add To Cart
+            </button>
+
+        </div>
+
+
+        <!-- REDMI -->
+
+        <div class="card">
+
+            <span class="badge">
+                Redmi
+            </span>
+
+            <img
+    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Redmi_Note_15_Pro.jpg"
+    alt="Redmi Note"
+>
+
+            <h3>
+                Redmi Note
+            </h3>
+
+            <p>
+                8GB RAM •
+                256GB Storage
+            </p>
+
+            <div class="price">
+                ₦420,000
+            </div>
+
+            <button
+                class="btn primary"
+                onclick="addToCart(
+                    'Redmi Note',
+                    420000
+                )"
+            >
+                Add To Cart
+            </button>
+
+        </div>
+
+
+        <!-- XIAOMI -->
+
+        <div class="card">
+
+            <span class="badge">
+                Xiaomi
+            </span>
+
+            <img
+    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Xiaomi_15_Ultra.jpg"
+    alt="Xiaomi Flagship"
+>
+
+            <h3>
+                Xiaomi Flagship
+            </h3>
+
+            <p>
+                Premium Android •
+                High Performance
+            </p>
+
+            <div class="price">
+                ₦700,000
+            </div>
+
+            <button
+                class="btn primary"
+                onclick="addToCart(
+                    'Xiaomi Flagship',
+                    700000
+                )"
+            >
+                Add To Cart
+            </button>
+
+        </div>
+
+
+        <!-- GOOGLE PIXEL -->
+
+        <div class="card">
+
+            <span class="badge">
+                Google
+            </span>
+
+            <img
+    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Google_Pixel.jpg"
+    alt="Google Pixel"
+>
+
+            <h3>
+                Google Pixel
+            </h3>
+
+            <p>
+                AI Camera •
+                Clean Android
+            </p>
+
+            <div class="price">
+                ₦700,000
+            </div>
+
+            <button
+                class="btn primary"
+                onclick="addToCart(
+                    'Google Pixel',
+                    700000
+                )"
+            >
+                Add To Cart
+            </button>
+
+        </div>
+
+
+        <!-- ONEPLUS -->
+
+        <div class="card">
+
+            <span class="badge">
+                OnePlus
+            </span>
+
+            <img
+    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/OnePlus_15_back.jpg"
+    alt="OnePlus"
+>
+
+            <h3>
+                OnePlus
+            </h3>
+
+            <p>
+                AMOLED Display •
+                Fast Performance
+            </p>
+
+            <div class="price">
+                ₦700,000
+            </div>
+
+            <button
+                class="btn primary"
+                onclick="addToCart(
+                    'OnePlus',
+                    700000
+                )"
+            >
+                Add To Cart
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <h3>YEMI PHONE STORE</h3>
+
+    <p>
+        Quality smartphones.
+        Honest service.
+    </p>
+
+    <p>
+        © 2026 YEMI Phone Store
+    </p>
+
+</footer>
+
+
+<script src="PHONE.js"></script>
+
+</body>
+</html>

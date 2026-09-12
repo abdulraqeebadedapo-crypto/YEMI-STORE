@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Accessories | PhoneStore</title>
+
+    <link rel="stylesheet" href="PHONE.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            PHONE<span>STORE</span>
+        </div>
+
+        <nav id="nav">
+            <a href="index.html">Home</a>
+            <a href="samsung.html">Samsung</a>
+            <a href="iphone.html">iPhone</a>
+            <a href="android.html">Android</a>
+            <a href="accessories.html" class="active">Accessories</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <button onclick="toggleDark()">🌙</button>
+
+            <button onclick="toggleCart()" class="cart-button">
+                🛒
+                <span id="cart-count">0</span>
+            </button>
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero accessories-hero">
+
+        <div class="hero-content">
+            <h1>Phone Accessories 🎧</h1>
+
+            <p>
+                Everything you need for your smartphone.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- ACCESSORIES -->
+    <section class="products-section">
+
+        <h2>Our Accessories</h2>
+
+        <div class="product-grid">
+
+
+            <!-- WIRELESS EARBUDS -->
+            <div class="card">
+
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Here_One_earbuds_in_white_charging_case.jpg"
+                    alt="Wireless Earbuds"
+                    class="product-image"
+                >
+
+                <div class="product-info">
+
+                    <h3>Wireless Earbuds</h3>
+
+                    <p>
+                        Compact wireless earbuds with clear sound,
+                        comfortable fit and long battery life.
+                    </p>
+
+                    <h2>₦35,000</h2>
+
+                    <button
+                        onclick="addToCart('Wireless Earbuds', 35000)">
+                        Add To Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAST CHARGER -->
+            <div class="card">
+
+                <img
+    src="https://images.samsung.com/is/image/samsung/p6pim/levant/ep-ta4511xwegww/gallery/levant-power-adapter-45w-ep-ta4511xwegww-frontblack-532198115?$650_519_PNG$"
+                    alt="Fast Charger"
+                    class="product-image">
+
+                <div class="product-info">
+
+                    <h3>Fast Charger</h3>
+
+                    <p>
+                        High-speed charging adapter suitable
+                        for compatible smartphones.
+                    </p>
+
+                    <h2>₦18,000</h2>
+
+                    <button
+                        onclick="addToCart('Fast Charger', 18000)">
+                        Add To Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PHONE CASE -->
+            <div class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1601593346740-925612772716?auto=format&fit=crop&w=900&q=85"
+                    alt="Phone Case"
+                    class="product-image"
+                >
+
+                <div class="product-info">
+
+                    <h3>Phone Case</h3>
+
+                    <p>
+                        Stylish protective case designed to
+                        protect your smartphone from scratches.
+                    </p>
+
+                    <h2>₦8,000</h2>
+
+                    <button
+                        onclick="addToCart('Phone Case', 8000)">
+                        Add To Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- POWER BANK -->
+            <div class="card">
+
+                <img
+                    src="https://www.anker.com/cdn/shop/files/A1638_45W_10K_PowerBank.jpg"
+                    alt="Power Bank"
+                    class="product-image"
+                >
+
+                <div class="product-info">
+
+                    <h3>Power Bank</h3>
+
+                    <p>
+                        Portable high-capacity power bank for
+                        charging your smartphone on the go.
+                    </p>
+
+                    <h2>₦30,000</h2>
+
+                    <button
+                        onclick="addToCart('Power Bank', 30000)">
+                        Add To Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- USB C CABLE -->
+            <div class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1625948515291-69613efd103f?auto=format&fit=crop&w=900&q=85"
+                    alt="USB-C Cable"
+                    class="product-image"
+                >
+
+                <div class="product-info">
+
+                    <h3>USB-C Cable</h3>
+
+                    <p>
+                        Durable USB-C cable designed for fast
+                        charging and reliable data transfer.
+                    </p>
+
+                    <h2>₦7,000</h2>
+
+                    <button
+                        onclick="addToCart('USB-C Cable', 7000)">
+                        Add To Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- SCREEN PROTECTOR -->
+            <div class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=900&q=85"
+                    alt="Screen Protector"
+                    class="product-image"
+                >
+
+                <div class="product-info">
+
+                    <h3>Screen Protector</h3>
+
+                    <p>
+                        Strong protective glass designed to
+                        protect your phone screen.
+                    </p>
+
+                    <h2>₦5,000</h2>
+
+                    <button
+                        onclick="addToCart('Screen Protector', 5000)">
+                        Add To Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CART -->
+    <div id="cart-panel" class="cart-panel">
+
+        <button onclick="toggleCart()" class="close-cart">
+            ✕
+        </button>
+
+        <h2>Your Cart</h2>
+
+        <div id="cart-items">
+            <p>Your cart is empty.</p>
+        </div>
+
+        <hr>
+
+        <h3>
+            Total:
+            <span id="cart-total">₦0</span>
+        </h3>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h2>
+            YEMI PHONE<span>STORE</span>
+        </h2>
+
+        <p>
+            Quality smartphones. Honest service.
+        </p>
+
+        <p>
+            © 2026 YEMI Phone Store
+        </p>
+
+    </footer>
+
+
+    <script src="PHONE.js"></script>
+
+</body>
+</html>
