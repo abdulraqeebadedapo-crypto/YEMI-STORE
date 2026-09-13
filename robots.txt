@@ -1,0 +1,5 @@
+User-agent:*
+Allow:/
+
+Sitemap:
+https://abdulraqeebadedapo-crypto.github.io/YEMI-STORE/sitemap.xml
