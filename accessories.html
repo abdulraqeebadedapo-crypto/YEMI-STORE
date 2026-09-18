@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Accessories | PhoneStore</title>
+    <title>Phone Accessories | Yemi Phone Store</title>
+
+    <meta name="description"
+          content="Shop quality phone accessories including wireless earbuds, fast chargers, phone cases, power banks, USB-C cables and screen protectors at Yemi Phone Store.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical"
+          href="https://abdulraqeebadedapo-crypto.github.io/YEMI-STORE/accessories.html">
+
+    <!-- Keep your existing Google verification tag here if this page has one -->
 
     <link rel="stylesheet" href="PHONE.css">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
     <header class="navbar">
 
         <div class="logo">
-            PHONE<span>STORE</span>
+            YEMI <span>PHONE STORE</span>
         </div>
 
         <nav id="nav">
@@ -29,246 +42,477 @@
         </nav>
 
         <div class="nav-buttons">
-            <button onclick="toggleDark()">🌙</button>
 
-            <button onclick="toggleCart()" class="cart-button">
-                🛒
-                <span id="cart-count">0</span>
+            <button
+                type="button"
+                onclick="toggleDark()"
+                aria-label="Toggle dark mode">
+                🌙
             </button>
+
+            <button
+                type="button"
+                onclick="toggleCart()"
+                class="cart-button"
+                aria-label="Open shopping cart">
+
+                🛒
+
+                <span id="cart-count">0</span>
+
+            </button>
+
         </div>
 
     </header>
 
 
-    <!-- HERO -->
-    <section class="hero accessories-hero">
+    <!-- =========================
+         ACCESSORIES HERO
+    ========================== -->
 
-        <div class="hero-content">
-            <h1>Phone Accessories 🎧</h1>
+    <section class="accessories-hero-new">
+
+        <div class="accessories-hero-overlay"></div>
+
+        <div class="accessories-hero-content">
+
+            <span class="hero-small-title">
+                YEMI PHONE STORE
+            </span>
+
+            <h1>
+                Accessories That
+                <span>Complete</span> Your Phone
+            </h1>
 
             <p>
-                Everything you need for your smartphone.
+                Discover quality accessories designed to protect,
+                power and enhance your smartphone experience.
             </p>
+
+            <a href="#accessories"
+               class="hero-shop-button">
+                Shop Accessories
+            </a>
+
         </div>
 
     </section>
 
 
-    <!-- ACCESSORIES -->
-    <section class="products-section">
+    <!-- =========================
+         ACCESSORIES SECTION
+    ========================== -->
 
-        <h2>Our Accessories</h2>
+    <main id="accessories"
+          class="accessories-main">
 
-        <div class="product-grid">
+        <div class="accessories-heading">
+
+            <span>SHOP OUR COLLECTION</span>
+
+            <h2>
+                Premium Phone Accessories
+            </h2>
+
+            <p>
+                Everything you need to get the most out of your smartphone.
+            </p>
+
+        </div>
 
 
-            <!-- WIRELESS EARBUDS -->
-            <div class="card">
+        <!-- ACCESSORY FILTER LABELS -->
 
-                <img
-                    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Here_One_earbuds_in_white_charging_case.jpg"
-                    alt="Wireless Earbuds"
-                    class="product-image"
-                >
+        <div class="accessory-tags">
 
-                <div class="product-info">
+            <span>⚡ Charging</span>
+            <span>🎧 Audio</span>
+            <span>🛡️ Protection</span>
+            <span>🔋 Power</span>
 
-                    <h3>Wireless Earbuds</h3>
+        </div>
+
+
+        <!-- PRODUCT GRID -->
+
+        <div class="accessories-product-grid">
+
+
+            <!-- =========================
+                 WIRELESS EARBUDS
+            ========================== -->
+
+            <article class="accessory-product-card">
+
+                <div class="accessory-product-image">
+
+                    <span class="product-badge">
+                        POPULAR
+                    </span>
+
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Here_One_earbuds_in_white_charging_case.jpg"
+                        alt="Wireless earbuds in charging case"
+                        loading="lazy">
+
+                </div>
+
+
+                <div class="accessory-product-info">
+
+                    <span class="product-type">
+                        AUDIO
+                    </span>
+
+                    <h3>
+                        Wireless Earbuds
+                    </h3>
 
                     <p>
                         Compact wireless earbuds with clear sound,
                         comfortable fit and long battery life.
                     </p>
 
-                    <h2>₦35,000</h2>
+                    <div class="product-purchase">
 
-                    <button
-                        onclick="addToCart('Wireless Earbuds', 35000)">
-                        Add To Cart
-                    </button>
+                        <strong>
+                            ₦35,000
+                        </strong>
+
+                        <button
+                            type="button"
+                            onclick="addToCart('Wireless Earbuds', 35000)">
+                            Add To Cart
+                        </button>
+
+                    </div>
 
                 </div>
 
-            </div>
+            </article>
 
 
-            <!-- FAST CHARGER -->
-            <div class="card">
+            <!-- =========================
+                 FAST CHARGER
+            ========================== -->
 
-                <img
-    src="https://images.samsung.com/is/image/samsung/p6pim/levant/ep-ta4511xwegww/gallery/levant-power-adapter-45w-ep-ta4511xwegww-frontblack-532198115?$650_519_PNG$"
-                    alt="Fast Charger"
-                    class="product-image">
+            <article class="accessory-product-card">
 
-                <div class="product-info">
+                <div class="accessory-product-image">
 
-                    <h3>Fast Charger</h3>
+                    <span class="product-badge">
+                        FAST
+                    </span>
+
+                    <img
+                        src="https://images.samsung.com/is/image/samsung/p6pim/levant/ep-ta4511xwegww/gallery/levant-power-adapter-45w-ep-ta4511xwegww-frontblack-532198115?$650_519_PNG$"
+                        alt="Samsung 45W fast phone charger"
+                        loading="lazy">
+
+                </div>
+
+
+                <div class="accessory-product-info">
+
+                    <span class="product-type">
+                        CHARGING
+                    </span>
+
+                    <h3>
+                        Fast Charger
+                    </h3>
 
                     <p>
                         High-speed charging adapter suitable
                         for compatible smartphones.
                     </p>
 
-                    <h2>₦18,000</h2>
+                    <div class="product-purchase">
 
-                    <button
-                        onclick="addToCart('Fast Charger', 18000)">
-                        Add To Cart
-                    </button>
+                        <strong>
+                            ₦18,000
+                        </strong>
+
+                        <button
+                            type="button"
+                            onclick="addToCart('Fast Charger', 18000)">
+                            Add To Cart
+                        </button>
+
+                    </div>
 
                 </div>
 
-            </div>
+            </article>
 
 
-            <!-- PHONE CASE -->
-            <div class="card">
+            <!-- =========================
+                 PHONE CASE
+            ========================== -->
 
-                <img
-                    src="https://images.unsplash.com/photo-1601593346740-925612772716?auto=format&fit=crop&w=900&q=85"
-                    alt="Phone Case"
-                    class="product-image"
-                >
+            <article class="accessory-product-card">
 
-                <div class="product-info">
+                <div class="accessory-product-image">
 
-                    <h3>Phone Case</h3>
+                    <span class="product-badge">
+                        PROTECT
+                    </span>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1601593346740-925612772716?auto=format&fit=crop&w=900&q=85"
+                        alt="Protective smartphone phone case"
+                        loading="lazy">
+
+                </div>
+
+
+                <div class="accessory-product-info">
+
+                    <span class="product-type">
+                        PROTECTION
+                    </span>
+
+                    <h3>
+                        Phone Case
+                    </h3>
 
                     <p>
                         Stylish protective case designed to
                         protect your smartphone from scratches.
                     </p>
 
-                    <h2>₦8,000</h2>
+                    <div class="product-purchase">
 
-                    <button
-                        onclick="addToCart('Phone Case', 8000)">
-                        Add To Cart
-                    </button>
+                        <strong>
+                            ₦8,000
+                        </strong>
+
+                        <button
+                            type="button"
+                            onclick="addToCart('Phone Case', 8000)">
+                            Add To Cart
+                        </button>
+
+                    </div>
 
                 </div>
 
-            </div>
+            </article>
 
 
-            <!-- POWER BANK -->
-            <div class="card">
+            <!-- =========================
+                 POWER BANK
+            ========================== -->
 
-                <img
-                    src="https://www.anker.com/cdn/shop/files/A1638_45W_10K_PowerBank.jpg"
-                    alt="Power Bank"
-                    class="product-image"
-                >
+            <article class="accessory-product-card">
 
-                <div class="product-info">
+                <div class="accessory-product-image">
 
-                    <h3>Power Bank</h3>
+                    <span class="product-badge">
+                        POWER
+                    </span>
+
+                    <img
+                        src="https://www.anker.com/cdn/shop/files/A1638_45W_10K_PowerBank.jpg"
+                        alt="Anker portable power bank"
+                        loading="lazy">
+
+                </div>
+
+
+                <div class="accessory-product-info">
+
+                    <span class="product-type">
+                        POWER
+                    </span>
+
+                    <h3>
+                        Power Bank
+                    </h3>
 
                     <p>
                         Portable high-capacity power bank for
                         charging your smartphone on the go.
                     </p>
 
-                    <h2>₦30,000</h2>
+                    <div class="product-purchase">
 
-                    <button
-                        onclick="addToCart('Power Bank', 30000)">
-                        Add To Cart
-                    </button>
+                        <strong>
+                            ₦30,000
+                        </strong>
+
+                        <button
+                            type="button"
+                            onclick="addToCart('Power Bank', 30000)">
+                            Add To Cart
+                        </button>
+
+                    </div>
 
                 </div>
 
-            </div>
+            </article>
 
 
-            <!-- USB C CABLE -->
-            <div class="card">
+            <!-- =========================
+                 USB-C CABLE
+            ========================== -->
 
-                <img
-                    src="https://images.unsplash.com/photo-1625948515291-69613efd103f?auto=format&fit=crop&w=900&q=85"
-                    alt="USB-C Cable"
-                    class="product-image"
-                >
+            <article class="accessory-product-card">
 
-                <div class="product-info">
+                <div class="accessory-product-image">
 
-                    <h3>USB-C Cable</h3>
+                    <span class="product-badge">
+                        USB-C
+                    </span>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1625948515291-69613efd103f?auto=format&fit=crop&w=900&q=85"
+                        alt="USB-C charging and data cable"
+                        loading="lazy">
+
+                </div>
+
+
+                <div class="accessory-product-info">
+
+                    <span class="product-type">
+                        CABLE
+                    </span>
+
+                    <h3>
+                        USB-C Cable
+                    </h3>
 
                     <p>
                         Durable USB-C cable designed for fast
                         charging and reliable data transfer.
                     </p>
 
-                    <h2>₦7,000</h2>
+                    <div class="product-purchase">
 
-                    <button
-                        onclick="addToCart('USB-C Cable', 7000)">
-                        Add To Cart
-                    </button>
+                        <strong>
+                            ₦7,000
+                        </strong>
+
+                        <button
+                            type="button"
+                            onclick="addToCart('USB-C Cable', 7000)">
+                            Add To Cart
+                        </button>
+
+                    </div>
 
                 </div>
 
-            </div>
+            </article>
 
 
-            <!-- SCREEN PROTECTOR -->
-            <div class="card">
+            <!-- =========================
+                 SCREEN PROTECTOR
+            ========================== -->
 
-                <img
-                    src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=900&q=85"
-                    alt="Screen Protector"
-                    class="product-image"
-                >
+            <article class="accessory-product-card">
 
-                <div class="product-info">
+                <div class="accessory-product-image">
 
-                    <h3>Screen Protector</h3>
+                    <span class="product-badge">
+                        PROTECTION
+                    </span>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=900&q=85"
+                        alt="Protective smartphone screen protector"
+                        loading="lazy">
+
+                </div>
+
+
+                <div class="accessory-product-info">
+
+                    <span class="product-type">
+                        PROTECTION
+                    </span>
+
+                    <h3>
+                        Screen Protector
+                    </h3>
 
                     <p>
                         Strong protective glass designed to
                         protect your phone screen.
                     </p>
 
-                    <h2>₦5,000</h2>
+                    <div class="product-purchase">
 
-                    <button
-                        onclick="addToCart('Screen Protector', 5000)">
-                        Add To Cart
-                    </button>
+                        <strong>
+                            ₦5,000
+                        </strong>
+
+                        <button
+                            type="button"
+                            onclick="addToCart('Screen Protector', 5000)">
+                            Add To Cart
+                        </button>
+
+                    </div>
 
                 </div>
 
-            </div>
+            </article>
 
         </div>
 
-    </section>
+    </main>
 
 
-    <!-- CART -->
-    <div id="cart-panel" class="cart-panel">
+    <!-- =========================
+         CART
+    ========================== -->
 
-        <button onclick="toggleCart()" class="close-cart">
+    <aside id="cart-panel"
+           class="cart-panel">
+
+        <button
+            type="button"
+            onclick="toggleCart()"
+            class="close-cart"
+            aria-label="Close shopping cart">
+
             ✕
+
         </button>
 
-        <h2>Your Cart</h2>
+        <h2>
+            Your Cart
+        </h2>
 
         <div id="cart-items">
-            <p>Your cart is empty.</p>
+
+            <p>
+                Your cart is empty.
+            </p>
+
         </div>
 
         <hr>
 
         <h3>
             Total:
-            <span id="cart-total">₦0</span>
+            <span id="cart-total">
+                ₦0
+            </span>
         </h3>
 
-    </div>
+    </aside>
 
 
-    <!-- FOOTER -->
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
     <footer>
 
         <h2>
@@ -285,6 +529,8 @@
 
     </footer>
 
+
+    <!-- JAVASCRIPT -->
 
     <script src="PHONE.js"></script>
 
